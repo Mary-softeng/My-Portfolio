@@ -7,7 +7,15 @@ body {
 }
 
 header {
-    background-color: #87cefa;
+    background-image: url('background.jpg'); /* Replace with your background image */
+    background-size: cover; /* Ensures the background image covers the entire header */
+    background-position: center; /* Centers the background image */
+    height: 300px; /* Set the height of the header */
+    color: white; /* Text color */
+    display: flex; /* Allows for flexible positioning of content */
+    flex-direction: column; /* Arranges children in a column */
+    align-items: center; /* Centers the children horizontally */
+    justify-content: center; /* Centers the children vertically */
     padding: 20px 0;
     text-align: center;
 }
@@ -37,6 +45,13 @@ nav ul li a {
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
+}
+.image {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Keep the height the same for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    border: 5px solid #ccc; /* Optional: adds a border around the circle */
 }
 
 h2 {
